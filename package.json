@@ -1,0 +1,36 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "description": "Awesome site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vikene/mysite"
+  },
+  "author": "vigneash sundar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vikene/mysite/issues"
+  },
+  "homepage": "https://github.com/vikene/mysite",
+   "dependencies":{
+    
+        "express":"~4.9.0",
+        "nib":"^1.0.4",
+        "stylus":"^0.49.1",
+        "jade":"^1.7.0",
+        "mongodb":"*",
+	
+        "monk":"*",
+        "body-parser":"*",
+        "express-session":"*"
+    
+    },
+    
+    "scripts":{
+    "start":"node app.js"
+    }
+}

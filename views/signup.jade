@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(name="viewport" ,content="width=device-width, initial-scale=1")
+    meta(name="description",content="")
+    meta(name="author",content="Vigneash Sundar")
+    title
+        | Login to Post
+
+    
+    link(href="/stylesheet/bootstrap.min.css",rel="stylesheet")
+
+
+    link(href="/stylesheet/signin.css",rel="stylesheet")
+    script(type='text/javascript',src='/js/session.js')
+    script(type='text/javascript')
+        |   check_user()
+
+
+  body
+
+    div(class="container")
+
+      form(class="form-signin", method="post" action="/signup" )
+        h2(class="form-signin-heading")
+            | Please sign up
+        label(for="inputEmail",class="sr-only")
+            | Email address
+        input(type="email",id="inputEmail",name="email" ,class="form-control" ,placeholder="Email address" required, autofocus)
+        label(for="inputPassword" ,class="sr-only")
+            | Password
+        input(type="password" id="inputPassword",name="password", class="form-control", placeholder="Password", required)
+        div(class="checkbox")
+            label
+                | Remember Me
+                input(type="checkbox",value="remember-me") 
+                    
+          
+        
+        button(class="btn btn-lg btn-primary btn-block" ,type="submit")
+            | Sign in
+      

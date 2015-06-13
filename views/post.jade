@@ -1,0 +1,42 @@
+doctype html
+html 
+    head   
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible",content="IE=edge")
+        meta(name="viewport" ,content="width=device-width, initial-scale=1")
+        meta(name="description",content="")
+        meta(name="author",content="Vigneash Sundar")
+        title= title
+        script(type='text/javascript',src='/js/session.js')
+        script(type='text/javascript')
+            | check_user_session()
+            | var dd = "#{sessionName}"
+        link(href="/stylesheet/bootstrap.min.css",rel="stylesheet")
+        link(href="/stylesheet/post.css",rel="stylesheet")
+       
+    body
+        h1
+            center
+                | Post Up
+        a(href="http://vigneashsundar.in:8080")
+            | view blog
+            
+        form(method='post',class="form-post",action='blog_it')
+            label
+                | Headline
+            input(type="text",name="heading",class="form-control")
+            br
+            br
+            label
+                | Content
+            textarea(name="content",cols="40",rows="10",class="form-control")
+            br
+            br
+            label
+                | tags
+            input(type="text",name="tags")
+            br
+            br
+            input(type="text",value="#{sessionName}",name="session",class="novisi")
+            input(type="text",value="#{sessionUser}", name="user",class="novisi")
+            input(type="submit", value="submit",class="btn btn-primary")

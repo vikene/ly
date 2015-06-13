@@ -1,0 +1,99 @@
+ body{
+        margin:0;
+            overflow:  hidden;
+            background: #4c68b1;
+        
+        }
+        #header{
+       
+            font-size: 25px;
+            color: white;
+            margin-top: 100px;
+            margin-left: 60px;
+            font-family: 'Indie Flower', cursive;
+            
+        
+        }
+            
+            #status{
+            width: 250px;
+                position: relative;
+                left:75%;
+                top: -35px;
+                
+                height:auto;
+                background: #eae9e9;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            .status_text{
+                    padding-left:  50px;
+                    padding-top: 25px;
+                padding-bottom: 25px;
+                font-family: 'Roboto Condensed', sans-serif;
+                font-size: 28px;
+                color:black;
+            }
+            .offline{
+            color:red;
+            }
+            .online{
+            color:green;
+            }
+            .somewhere{
+            color: yellow;
+            }
+            #post{
+                marign-top: 50px;
+                margin-bottom: 50px;
+                margin-left: 40%;
+                width: 600px;
+                background: #eae9e9;
+                height: auto;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                
+            
+            }
+            
+            #post_head{
+                font-style: italic;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 5px;
+                height: auto;
+                border-bottom: 2px dashed #ccc;
+                font-size: 25px;
+                font-family: 'Roboto Slab', serif;
+                
+            
+            }
+            
+            #post_content{
+                
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 25px;
+                padding-right: 10px;
+                border-bottom: 3px solid #ccc;
+                 font-family: 'Roboto Condensed', sans-serif;
+            }
+            
+            #post_tags{
+            padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 15px;
+                 font-family: 'Roboto Condensed', sans-serif;
+            
+            }
+            #like{
+            margin-top: -20px;
+                margin-left:530px; 
+                top:-40px;
+                 font-family: 'Roboto Condensed', sans-serif;
+            
+            }

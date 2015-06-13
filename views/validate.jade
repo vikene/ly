@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title
+            | validating please wait
+        script(type='text/javascript',src='/js/session.js')
+        script(type='text/javascript')
+            | var session_name = "#{session_name}"
+            | var session_user = "#{session_user}"
+            | set_session()
+            | redirect_user()
+    body
+        p   
+            | Redirecting you in minutes please Wait

@@ -1,0 +1,50 @@
+  body 
+        {
+            background: #ffffff;
+            margin: 0;
+            
+        }
+        #content{
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+            background: #eeeeee;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        
+        }
+        .jvnb{
+            background: #F44336;
+            position: relative;
+            top: -20px;
+            
+        
+        }
+        .ban{
+         padding: 20px;
+            color: #ffffff;
+            font-family: 'Roboto', sans-serif;
+            
+        }
+        .jactive a{
+            
+            color:#ffffff;
+             font-family: 'Roboto', sans-serif;
+        }
+        .jactive {
+        
+            background: #009688;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .nonact a{
+            color:#009688;
+        
+        }

@@ -1,0 +1,68 @@
+doctype html
+doctype html
+html
+
+head
+
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible",content="IE=edge")
+    meta(name="viewport",content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no")
+    
+    meta(name="description",content="Operating system Development Blog")
+    meta(name="author",content="Vigneash Sundar")
+
+    title=title
+
+    link(href='http://fonts.googleapis.com/css?family=Roboto',rel='stylesheet',type='text/css')
+    link(href="stylesheet/bootstrap.css",rel="stylesheet")
+
+   
+    link(href="stylesheet/os_css.css",rel="stylesheet")
+
+  
+   
+
+
+
+body
+    div(class="jvnb")
+        center
+            h1(class="ban")
+                | Vikene's Os Development Blog
+        
+        
+        
+       
+     div(class="container-fluid")
+            div(class="row")
+                div(class="col-md-2")
+                    ul(class="nav nav-pills nav-stacked")
+                        li(role="presentation", class="nonact")
+                            a(href="/os_dev")
+                                |Home
+                        li(role="presentation", class="jactive")
+                            a(href="#")
+                                | Boot sequence
+                        li(role="presentation", class="nonact")
+                            a(href="#")
+                                | Contact
+            
+                div(id="content" class="col-md-10")
+                        | Boot process : <br><br>
+                        | There are several hundreds of hardware components residing inside our PC/Laptop, Now when you turn on you're system and run some program, for example am running a Road Traffic control Robot using a remote dash interface  on my PC. This Software running on my PC, has to connect to that robot on a WiFi network. Now it happens to be that my WiFi adapter has just got blown out. If I run that software in my Pc , I wont get my intended result of controlling that robot. This is a case where hardware debugging is required, at least to say where we got an error. The user has to know, whether Software driver got banged or its the hardware failure. This is a simple case, but in real world computers are almost everywhere. If there has been a hardware failure in real time then that machine shouldn't start and it has to say that there is an error , try to correct it. This job is very important when computers are used in Radar and medical lines where slight hardware failure may cause a serious damage.<br><br>
+                        | This is taken care by devices inbuilt firmware/BIOS, any computing device when powered on makes a self test of all hardware components available with it. This test is also called as Power On  Self Test (POST) . Once POST check is complete and everything is good to go. <br><br>
+                        | Device Firmware/BIOS transfers system control to Bootloader, to demysitfy this word. A boot loader is a software which loads Operating system's kernel (Core of any OS) on to ram from any bootable media. <br><br>
+                        | Master Boot Record (MBR):<br>
+                        | In order for the BIOS to consider a device or media to be a bootable one, it must contain a Master Boot record with a standard signature. First 512 bytes of a Floppy or CD is called MBR, like BIOS scans that media's first 512 bytes and if it contains 0x55 and 0xAA in its 511 and 512 bytes respectively that media is bootable. 0X55AA is standard boot signature.  <br><br>
+                        | In hard drive, MBR has 446 bytes only. Usually 0x0000-0x01bd.<br><br>
+                        | Voila!! , BIOS has found an Operating System, now it loads that media onto 0x0000:0x7C00. Then the control of Hardware is given to Boot loader.<br><br>
+                        | Boot loader now loads operating System's kernel onto Ram at specified location and then sets environment for kernel to work properly. Control is now transferred from boot loader to Kernel.<br><br>
+                        | When kernel is loaded on to RAM, Processor usually runs on real mode (16bit), that is Boot Loader doesn't switch modes (Dont worry , real mode and protected mode would be taken care of in next Post). Though some Boot Loaders take responsibility of switching to Protected Mode and then transfers the control to Operating System. example GRUB.<br><br>
+                        | Loading Types:<br>
+                        | 1) One Stage Loading, example -> Our boot loader<br>
+                        | 2) Two Stage Loading, example ->  GRUB<br>
+                        | Next post would be on different Operating  Modes  of Intel  x86.<br><br>
+
+
+        
+                
